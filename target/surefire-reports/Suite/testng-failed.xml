@@ -5,6 +5,7 @@
     <classes>
       <class name="restAssuredTests.ApiTestCases">
         <methods>
+          <include name="verifyPrice"/>
           <include name="verifyResponseTime"/>
         </methods>
       </class> <!-- restAssuredTests.ApiTestCases -->

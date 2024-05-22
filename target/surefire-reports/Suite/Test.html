@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 23 02:02:56 IST 2024</td>
+<td>Started on:</td><td>Thu May 23 02:19:28 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3981 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3666 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,12 +80,58 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: Response time is less than 3 seconds expected [true] but found [false]
 	at restAssuredTests.ApiTestCases.verifyResponseTime(ApiTestCases.java:146)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace293669143", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace293669143'><pre>java.lang.AssertionError: Response time is less than 3 seconds expected [true] but found [false]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1244785938", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1244785938'><pre>java.lang.AssertionError: Response time is less than 3 seconds expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertTrue(Assert.java:56)
 	at restAssuredTests.ApiTestCases.verifyResponseTime(ApiTestCases.java:146)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>restAssuredTests.ApiTestCases@c33b74f</td></tr>
+<tr>
+<td title='restAssuredTests.ApiTestCases.verifyPrice()'><b>verifyPrice</b><br>Test class: restAssuredTests.ApiTestCases</td>
+<td><div><pre>java.lang.AssertionError: AED price is not matching with given price in Test data expected [3.6725] but found [4.6725]
+	at restAssuredTests.ApiTestCases.verifyPrice(ApiTestCases.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace656844049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace656844049'><pre>java.lang.AssertionError: AED price is not matching with given price in Test data expected [3.6725] but found [4.6725]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at restAssuredTests.ApiTestCases.verifyPrice(ApiTestCases.java:94)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -129,7 +175,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='restAssuredTests.ApiTestCases.verifyPrice()'><b>verifyPrice</b><br>Test class: restAssuredTests.ApiTestCases</td>
+<td title='restAssuredTests.ApiTestCases.verifyUSDToAEDPrice()'><b>verifyUSDToAEDPrice</b><br>Test class: restAssuredTests.ApiTestCases</td>
 <td></td>
 <td>0</td>
 <td>restAssuredTests.ApiTestCases@c33b74f</td></tr>
@@ -139,7 +185,7 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>restAssuredTests.ApiTestCases@c33b74f</td></tr>
 <tr>
-<td title='restAssuredTests.ApiTestCases.verifyUSDToAEDPrice()'><b>verifyUSDToAEDPrice</b><br>Test class: restAssuredTests.ApiTestCases</td>
+<td title='restAssuredTests.ApiTestCases.verifyTotalCurrencies()'><b>verifyTotalCurrencies</b><br>Test class: restAssuredTests.ApiTestCases</td>
 <td></td>
 <td>0</td>
 <td>restAssuredTests.ApiTestCases@c33b74f</td></tr>
@@ -150,11 +196,6 @@ function toggleAllBoxes() {
 <td>restAssuredTests.ApiTestCases@c33b74f</td></tr>
 <tr>
 <td title='restAssuredTests.ApiTestCases.verifyStatusCode()'><b>verifyStatusCode</b><br>Test class: restAssuredTests.ApiTestCases</td>
-<td></td>
-<td>0</td>
-<td>restAssuredTests.ApiTestCases@c33b74f</td></tr>
-<tr>
-<td title='restAssuredTests.ApiTestCases.verifyTotalCurrencies()'><b>verifyTotalCurrencies</b><br>Test class: restAssuredTests.ApiTestCases</td>
 <td></td>
 <td>0</td>
 <td>restAssuredTests.ApiTestCases@c33b74f</td></tr>
